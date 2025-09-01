@@ -4,6 +4,8 @@ WORKDIR /AstrBot
 COPY . /AstrBot/
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    && apt-get upgrade -y && apt-get install -y --no-install-recommends \
     nodejs \
     npm \
     gcc \
@@ -11,7 +13,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-dev \
     libffi-dev \
     libssl-dev \
-    ca-certificates \
     bash \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*

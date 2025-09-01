@@ -40,3 +40,6 @@ aiosqlite
 py-cord>=2.6.1
 slack-sdk
 pydub
+numpy>=2.2.0
+pymilvus>=2.5.0
+markitdown-no-magika[pptx,docx,xlsx,xls,pdf]
