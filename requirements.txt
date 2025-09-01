@@ -43,4 +43,3 @@ pydub
 numpy>=2.2.0
 pymilvus>=2.5.0
 markitdown-no-magika[pptx,docx,xlsx,xls,pdf]
-pyppeteer==1.0.2
